@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #div1 {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: colorbox1 3s infinite;
+        animation-direction: alternate;
+      }
+      #div2{
+        width: 100px;
+        height: 100px;
+        background: green;
+        position: relative;
+        animation: colorbox2 3s infinite;
+        animation-direction: alternate;
+      }
+      @keyframes colorbox1 {
+        from {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background: orange;
+          left: 300px;
+          top: 0px;
+        }
+        50% {
+          background: green;
+          left: 100px;
+          top: 300px;
+        }
+        75% {
+          background: red;
+          left: 0px;
+          top: 300px;
+        }
+        to {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+      @keyframes colorbox2 {
+        from {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background: orange;
+          left: 450px;
+          top: 0px;
+        }
+        50% {
+          background: green;
+          left: 0px;
+          top: 450px;
+        }
+        75% {
+          background: red;
+          left: 0px;
+          top: 450px;
+        }
+        to {
+          background: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: orange;
+
+        transition: background;
+        transition-duration: 10s;
+        border: 1px solid red;
+        transition-property: width, background, color;
+      }
+      div:hover {
+        width: 400px;
+
+        background: blue;
+        color: white;
+        transform: rotate(360deg);
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div>속성 변하게</div>
+  </body>
+</html>

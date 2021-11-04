@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        width: 100px;
+        height: 50px;
+        background: red;
+        position: relative;
+        animation: boxmove 5s linear infinite;
+      }
+      #box1 {
+        animation-delay: 0.5s;
+        animation-direction: reverse;
+        animation-iteration-count: 2;
+      }
+      #box2 {
+        animation-delay: 1s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: 5;
+      }
+      @keyframes boxmove {
+        form {
+          left: 0px;
+        }
+        to {
+          left: 300px;
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box1">애니메 박스1</div>
+    <div id="box2">애니메 박스2</div>
+  </body>
+</html>
