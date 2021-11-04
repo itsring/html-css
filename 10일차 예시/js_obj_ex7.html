@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>[Hong's Car]</p>
+    <p id="carName"></p>
+    <p id="carColor"></p>
+    <p id="carSpeed"></p>
+    <p>[Kim's Car]</p>
+    <p id="carName2"></p>
+    <p id="carColor2"></p>
+    <p id="carSpeed2"></p>
+    <script>
+        function Car(name, color, speed){
+            this.name=name;
+            this.color=color;
+            this.speed=speed;
+            this.speedUp=function(){
+                return this.speed+10;
+            };
+            this.speedDown=function(){
+                return this.speed-10;
+            };
+        }
+        var HongCar=new Car('Sonata','blue',100);
+        var KimCar=new Car('Jeep','red',70);
+        var cName=document.getElementById("carName");
+        cName.textContent=`자동차 이름 : ${HongCar.name}`;
+        var colName=document.getElementById("carColor");
+        colName.textContent=`자동차 색상 : ${HongCar.color}`;
+        var cSpeed=document.getElementById("carSpeed");
+        cSpeed.textContent=`자동차 속도 : ${HongCar.speedUp()}`;
+        var cName=document.getElementById("carName2");
+        cName.textContent=`자동차 이름 : ${KimCar.name}`;
+        var colName=document.getElementById("carColor2");
+        colName.textContent=`자동차 색상 : ${KimCar.color}`;
+        var cSpeed=document.getElementById("carSpeed2");
+        cSpeed.textContent=`자동차 속도 : ${KimCar.speedUp()}`;
+    </script>
+</body>
+</html>

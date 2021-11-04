@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="upSpeed"></p>
+    <p id="downSpeed"></p>
+    <script>
+      var car = {
+        name: "Sonata",
+        speed: 100,
+        color: "white",
+        speedUp: function (a) {
+          var sp = this.speed + a;
+          if (sp >= 300) {
+            sp = 50;
+            return sp;
+          } else {
+            return sp;
+          }
+        },
+        speedDown: function (a) {
+          var sp = this.speed - a;
+          if (sp < 0) {
+            sp = 0;
+            return sp;
+          } else {
+            return sp;
+          }
+        },
+      };
+      var upSpeed = document.getElementById("upSpeed");
+      upSpeed.textContent = `속도증가 : ${car.speedUp(100)}`;
+      var downSpeed = document.getElementById("downSpeed");
+      downSpeed.textContent = `속도 감소 : ${car.speedDown(30)}`;
+    </script>
+  </body>
+</html>

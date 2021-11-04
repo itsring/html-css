@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.head {
+  background-color: #473e37;
+  padding: 1em;
+}
+.pg-main {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.entries p.pcview_only {
+  display: none;
+}
+.sidebar ul {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: #ccc;
+}
+.sidebar ul li {
+  display: inline;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: #ccc;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.foot {
+  background-color: #333;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #999;
+  padding: 10px;
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
+}
