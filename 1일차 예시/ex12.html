@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>실험 페이지</title>
+    </head>
+    
+    <body>
+      <section>
+        <article>
+          <table border="1" style="width:50%">
+                <caption>행 통합 테이블</caption>
+              <tr>
+                <th>1행</th>
+                <td>1행 1열</td>
+              </tr>
+              <tr>
+                <th rowspan="2"> 2행</th>
+                <td>2행 2열</td>
+              </tr>
+              <tr>
+                <td>3행 2열</td>
+              </tr>
+            </table>
+          </article>
+        </section>
+        <p></p>
+        <section>
+            <article>
+                <table border="1" style="width:50%">
+                    <caption>열 통합 테이블</caption>
+                    <tr>
+                        <th>1열</th>
+                        <th colspan="2">2열</th>
+                    </tr>
+                    <tr>
+                        <td>2행 1열</td>
+                        <td>2행 2열</td>
+                        <td>2행 3열</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <p></p>
+        <section>
+            <article>
+                <table border="1" style="width:70%>">
+                    <caption>
+                        <article>
+                           열,행 통합 테이블
+                        </article>  
+                    </caption>
+                    <tr>
+                        <td>가 yo</td>
+                        <td>나 yo</td>
+                        <td>다 yo</td>
+                        <td rowspan="4">라 yo</td>
+                    </tr>
+                    <tr>
+                        <td>마 yo</td>
+                        <td colspan="2" rowspan="3">바 yo</td>
+                    </tr>
+                    <tr>
+                        <td>사 yo</td>
+                    </tr>
+                    <tr>
+                        <td>아 jo</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">자 yo</td>
+                        <td colspan="2">차 yo</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">카 yo</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </body>
+</html>
