@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            td, th{
+                border: 1px solid blue;
+            }
+            #tb1{
+                border-collapse: separate;
+                empty-cells: hide;
+            }
+            #tb2{
+                border-collapse: separate;
+                empty-cells: show;
+            }
+            #c1{
+                border: 3px solid blue;
+                caption-side: top;
+                border-collapse: collapse;
+            }
+            #c2{
+                border: 3px solid red;
+                caption-side: bottom;
+                border-collapse: collapse;
+            }
+        </style>    
+        <title></title>
+    </head>
+    <body>
+        <table id="tb1" border="1" width="300px">
+            <tr>
+                <td>국어</td>
+                <td>영어</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>수학</td>
+                <td></td>
+            </tr>
+        </table>
+        <p></p>
+        <table id="tb2" border="1" width="300px">
+            <tr>
+                <td>국어</td>
+                <td>영어</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>수학</td>
+                <td></td>
+            </tr>
+        </table>
+        <p>?</p>
+        <table id="c1" border="1" width="300px">
+            <caption>[table 1-1] Korea University</caption>
+            <tr>
+                <th>University</th>
+                <th>Country</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Seoul Uni</td>
+                <td>Hong</td>
+                <td>Korea</td>
+            </tr>
+        </table>
+        <p></p>
+        <table id="c2" border="1" width="300px">
+            <caption>[table 1-2] Korea University</caption>
+            <tr>
+                <th>University</th>
+                <th>Country</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>하바드</td>
+                <td>제키</td>
+                <td>미쿡</td>
+            </tr>
+        </table>
+    </body>
+</html>

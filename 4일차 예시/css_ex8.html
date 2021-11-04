@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      p[text] {
+        color: red;
+      }
+      p[text="red"] {
+        color: yellow;
+        background-color: purple;
+      }
+      p[text~="bb"] {
+        color: blue;
+        background-color: aqua;
+      }
+      p[text|="a1"] {
+        color: violet;
+        background-color: burlywood;
+      }
+      p[text^="img"] {
+        color: black;
+        background-color: brown;
+      }
+      p[text$=".png"] {
+        color: pink;
+        background-color: red;
+      }
+      p[text*="ong"] {
+        color: gray;
+        background-color: coral;
+      }
+    </style>
+    <title>CSS3 example8</title>
+  </head>
+  <body>
+    <p text="hello">모든 텍스트</p>
+    <p text="red">텍스트 매칭 속성</p>
+    <p text="aa bb cc">리스트 매칭 속성</p>
+    <p text="a1-a2-a3">범위 텍스트 매칭 속성</p>
+    <p text="img/pic,jpg">텍스트 시작 매칭 속성</p>
+    <p text="img.pic.png">텍스트 끝 매칭 속성</p>
+    <p text="seongyong Hong">텍스트 패턴 매칭 속성</p>
+  </body>
+</html>
